@@ -36,5 +36,5 @@ A web-based sentiment analysis application using Flask and Hugging Face's Transf
   
     index.html: HTML templates for the frontend.
     
-    static/: Static files like CSS and JavaScript.
+    style.css: Static files like CSS and JavaScript.
     
