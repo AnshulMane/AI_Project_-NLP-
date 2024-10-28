@@ -38,4 +38,3 @@ A web-based sentiment analysis application using Flask and Hugging Face's Transf
     
     static/: Static files like CSS and JavaScript.
     
-    requirements.txt: Lists the Python packages needed to run the app.
