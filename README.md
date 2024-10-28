@@ -34,7 +34,7 @@ A web-based sentiment analysis application using Flask and Hugging Face's Transf
    
     app.py: Contains the Flask backend logic.
   
-    templates/: HTML templates for the frontend.
+    index.html: HTML templates for the frontend.
     
     static/: Static files like CSS and JavaScript.
     
