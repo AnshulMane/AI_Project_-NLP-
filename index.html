@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Sentiment Analysis</h1>
+        <form method="POST">
+            <label for="text">Enter text:</label>
+            <textarea id="text" name="text" rows="4" cols="50"></textarea>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+
+        {% if sentiment %}
+        <div class="result">
+            <h2>Result:</h2>
+            <p class="{{ 'sentiment-positive' if sentiment == 'POSITIVE' else 'sentiment-negative' }}">Sentiment: {{ sentiment }}</p>
+            <p>Confidence Score: {{ score }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
